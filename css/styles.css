@@ -114,6 +114,10 @@ body  {
 .header_background {
     background: var(--NAVY-BLUE, #2E2F42);
     padding: 188px 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    background-image: url('../images/img17.jpg');
+    background-size: cover;
 }
 
 .logo_web {
@@ -194,6 +198,7 @@ body  {
     color: var(--WHITE, #FFF);
     cursor: pointer;
     border: 1px solid transparent;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .buttons_section_one {
@@ -220,12 +225,21 @@ body  {
 .list_strategy {
     display:flex;
     gap: 24px;
-    padding-left: 0;
     list-style-type: none;
 }
 
 .strategy_calc {
     width: calc((100% - 72px) / 4);
+}
+
+.strategy_icons_backgr {
+    border-radius: 4px;
+    background-color: #F4F4FD; 
+}
+
+.strategy_icons {
+    width: 64px;
+    margin: 0 100px;
 }
 
 .terms {
@@ -304,7 +318,7 @@ body  {
     background-color: var(--CLOUD, #F4F4FD); 
 }
 
-.header_last {
+.header_fourth {
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 36px;
     line-height: 1.11;
@@ -318,16 +332,34 @@ body  {
     display:flex;
     gap: 24px;
     list-style-type: none;
+    
 }
 
 .photo-team {
     width: calc((100%-72px) /4);
     background: var(--WHITE, #FFF); 
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team_div {
     padding: 32px 0px;
+}
+
+.team_social_links {
+    display: flex;
+    justify-content:center;
+    gap: 24px;  
+    margin-top: 8px;    
+}
+
+.social_icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
 }
 
 .portfolio_div {
@@ -343,8 +375,13 @@ body  {
     row-gap: 48px;    
     flex-wrap: wrap;
     list-style: none;
-
 }
+
+.photo_portf:hover
+ {
+    background: lightgray 50%;
+}
+
 
 .photo_portf {
     width: calc((100% - 48px) / 3);
@@ -352,11 +389,40 @@ body  {
     align-items: flex-start;
 }
 
+.header_last {
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 72px
+}
+
+.customers_calc {
+    display: flex;
+    width: calc((100%-120px) /6);
+    flex-wrap: nowrap;
+    width: 168px;
+    height: 88px; 
+    border: 1px solid #8E8F99;
+    border-radius: 4px; 
+}
+
+.customers_icons {
+    padding: 16px 32px;
+}
+
 .footer-part {
     background: var(--NAVY-BLUE, #2E2F42);
     align-items: center;
     justify-content: flex-start;
     padding: 100px 0;
+}
+
+.footer_content {
+    display: flex;
+    align-items: baseline;
 }
 
 .link_footer {
@@ -399,4 +465,26 @@ body  {
     letter-spacing: 0.02em;
     color: var(--CLOUD, #F4F4FD);
     width: 264px;
+}
+
+.social_text_footer {
+    color: var(--WHITE, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px; 
+}
+
+.social_links_footer {
+    display: flex;
+    gap: 24px;    
+    padding: 16px;  
+}
+
+.social_icon_footer {
+    width: 40px;
+    height: 40px;
+    display: flex; 
 }
