@@ -451,7 +451,7 @@ body  {
     border-color: #404bbf;
     color: #404bbf;
 }
-.customers_icons:active {
+.customers_icons:focus {
     border-color: #404bbf;
     background-color: #404bbf;
 }
