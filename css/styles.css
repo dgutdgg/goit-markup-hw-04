@@ -444,13 +444,10 @@ body  {
     color: var(--LIGHT-SLATE, #8e8f99);
 }
 
-.customers_icons:hover {
-    border-color: #404bbf;
-    color: #404bbf;
-}
+.customers_icons:hover,
 .customers_icons:focus {
-    border-color: #404bbf;
-    background-color: #404bbf;
+    border-color: var(--OCEAN, #404BBF);
+    color: var(--OCEAN, #404BBF);
 }
 
 .customers_logo {
