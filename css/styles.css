@@ -401,6 +401,7 @@ body  {
 .list_portf {
     display: flex;
     column-gap: 24px;
+    row-gap: 24px;
     flex-wrap: wrap;
     list-style: none;
 }
